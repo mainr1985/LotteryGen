@@ -1,5 +1,5 @@
 import random
-amount = int(input ("How many numbers would you like?"))
+amount = int(input ("Quantos números você deseja?"))
 numbers=[]
 number=[]
 for i in range (1,100):
