@@ -1,6 +1,10 @@
 import random
-amount = input ("How many numbers would you like?")
+amount = int(input ("How many numbers would you like?"))
 numbers=[]
+number=[]
 for i in range (1,100):
   numbers.append(i)
-chosen_number=random.choice(numbers)
+for _ in range (1, amount+1):
+  chosen_number=random.choice(numbers)  
+  number.append(chosen_number)
+print (*number, sep="-") #imprime tudo de chosen_number em uma mesma linha, separando por "-"
